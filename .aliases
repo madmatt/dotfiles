@@ -41,6 +41,9 @@ alias c='pygmentize -O style=monokai -f console256 -g'
 # Undo a `git push`
 alias undopush="git push -f origin HEAD^:master"
 
+# git stash, pull w/ rebase and pop
+alias gp="git stash && git pull --rebase && git stash pop"
+
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en1"
