@@ -15,6 +15,8 @@ shopt -s nocaseglob
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US"
 
+export PATH=/Users/mpeel/.composer/vendor/bin:/Users/mpeel/code/ngrok:$PATH
+
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
 [ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2)" scp sftp ssh
 
