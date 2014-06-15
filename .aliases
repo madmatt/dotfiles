@@ -47,6 +47,12 @@ alias undopush="git push -f origin HEAD^:master"
 # git stash, pull w/ rebase and pop
 alias gp="git stash && git pull --rebase && git stash pop"
 
+# git pull w/ rebase
+alias gr="git pull --rebase"
+
+# ngrok default port 80
+alias ng="ngrok 80"
+
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en1"
