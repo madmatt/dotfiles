@@ -11,6 +11,9 @@ alias hosts='sudo $EDITOR /etc/hosts'   # yes I occasionally 127.0.0.1 twitter.c
 # Start blackfire-agent
 alias start-bfagent='launchctl load ~/Library/LaunchAgents/homebrew.mxcl.blackfire-agent.plist'
 
+# Start burpsuite
+alias burp='java -jar -Xmx1024m ~/code/burpsuite/burpsuite.jar'
+
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
 	colorflag="--color"
